@@ -1,66 +1,207 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3256121925344066"
-    crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByteBreeze</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<title>ByteBreeze™</title>
+<meta name="title" content="ByteBreeze">
+<meta name="description" content="Effortlessly deploy, edit and manage high-performance 24/7 game servers. Create your free server in under 60 seconds. ">
+<meta name="keywords" content="free game hosting, free minecraft hosting, free 24/7 minecraft hosting, game hosting, ByteBreeze, slug">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="author" content="ByteBreezeHosting">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script src="https://kit.fontawesome.com/cf4342c927.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/nanobar/0.4.2/nanobar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
 </head>
-<body>
+<body style="font-family: 'Inter Tight'" class="bg-[#0b0b0f] relative">
+  <div class="absolute z-0 h-screen w-screen top-0 left-0">
+    <video class="h-full w-full object-cover opacity-50" autoplay loop muted playsinline>
+      <source src="https://nolag.host/vendor/videoplayback.webm" type="video/webm">
+      <source src="https://nolag.host/vendor/videoplayback.mp4" type="video/mp4">
+    </video>
+  </div>
 
-    <header>
-        <div class="brand">ByteBreeze</div>
-        <nav>
-            <button class="nav-button">Home</button>
-            <button class="nav-button">About</button>
-            <button class="nav-button">Services</button>
-            <button class="nav-button">Contact</button>
-        </nav>
-    </header>
+  <section class="relative bg-[#0b0b0f]/70 backdrop-blur border-b border-white/5">
+    <div class="relative z-10 w-full mx-auto max-w-7xl p-5 lg:px-16 md:flex md:items-center md:justify-between md:px-6">
+                <div class="relative w-full mx-auto max-w-7xl">
+                  <div class="relative flex flex-col w-full mx-auto lg:px-16 md:flex-row md:items-center md:justify-between md:px-6" x-data="{ open: false }">
+                    <div class="flex flex-row items-center justify-between text-sm text-white lg:justify-start">
+                      <a href="/">
+<span class="flex">
+      <img width="35" height="17" src="logo.png" alt="sluglogo" si>
+<span class="text-xl">ByteBreeze</span>
+</span>
+</a><button class="inline-flex items-center justify-center p-2 text-white focus:outline-none focus:text-black hover:text-black md:hidden" @click="open = !open">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                          <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col items-center flex-grow hidden md:flex md:flex-row md:justify-end md:pb-0">
+                      <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
+                        <a href="#service" class="block px-4 py-2 mt-2 text-sm text-white hover:text-white/50 focus:outline-none focus:shadow-outline md:mt-0">
+                            Services
+                            </a>
+                        <a href="/" class="block px-4 py-2 mt-2 text-sm text-white hover:text-white/50 focus:outline-none focus:shadow-outline md:mt-0">
+                          Premium
+                            </a>
+                        <a href="https://dash.ByteBreeze.org/login" class="text-white text-sm py-2 focus:outline-none px-4 active:text-#279f0e bg-[#17181d]/70 backdrop-blur transition hover:bg-[#1b1c22] focus-visible:outline-2 focus-visible:outline-fuchsia-50 focus-visible:outline-offset-2 group inline-flex items-center justify-center rounded-xl">
+                          Get started
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+    </div>
+  </section>
 
-    <main>
-        <div class="buttons">
-            <a href= "https://host.bytebreeze.org" class="animated-button">Client</a>
-            <a href="https://panel.bytebreeze.org" class="animated-button">Panel</a>
+  <section class="relative items-center justify-center bg-[#0b0b0f]/50 flex h-screen">
+
+    <div class="relative z-10 w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
+<div class="relative items-center w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
+                  <div class="max-w-3xl mt-2 mx-auto text-center">
+                    <div>
+                      <p class="text-3xl font-medium tracking-tight text-white/70 lg:text-6xl">
+                        Game server hosting
+                        <span class="md:block text-white">Fast, simple and freemium</span>
+                      </p>
+                      <p class="max-w-xl mx-auto mt-8 text-base lg:text-xl text-gray-400">
+                        Effortlessly deploy, edit and manage high-performance 24/7 game servers. Create your free or Paid server in under 5min.
+                      </p>
+                    </div>
+                    <div class="flex flex-col justify-center max-w-sm gap-3 mx-auto mt-10 sm:flex-row">
+                      <a href="https://billing.ByteBreeze.org/" class="text-white focus:outline-none inline-flex items-center justify-center rounded-full bg-[#3d49f5] duration-200 focus-visible:outline-black focus-visible:ring-black font-medium hover:bg-[#1d4ed8] hover:border-white hover:text-white lg:w-auto px-6 py-2 text-center w-full">Premium</a>
+                      <a href="https://host.ByteBreeze.org/" class="text-white focus:outline-none inline-flex items-center justify-center rounded-full bg-[#3d49f5] duration-200 focus-visible:outline-black focus-visible:ring-black font-medium hover:bg-[#1d4ed8] hover:border-white hover:text-white lg:w-auto px-6 py-2 text-center w-full">Free</a>
+                    </div>
+                  </div>
+                </div>
+    </div>
+  </section>
+
+  <section class="relative py-32
+  " id="service">
+    <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
+      <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
+      <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
+    </div>
+    <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">ByteBreeze's Services</h2>
+      </div>
+      <div class="mt-16 grid gap-4 sm:mx-auto sm:w-1/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+          <div class="space-y-12 text-center">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Minecraft</h3>
+              <p class="text-gray-600 dark:text-gray-300">We Provide Affordable Minecraft 24/7 Hosting Service with top-notch quality hardware.</p>
+            </div>
+          </div>
         </div>
-
-        <section class="why-choose-us">
-            <h2>Why Choose ByteBreeze for Game Panel Hosting?</h2>
-            <p>At ByteBreeze, we take game panel hosting to the next level, providing a seamless and powerful experience for gamers, developers, and server administrators. Here's why you should choose us:</p>
-
-            <div class="feature">
-                <h3>1. Cutting-Edge Technology</h3>
-                <p>We utilize the latest technologies to ensure optimal performance and reliability for your game servers. Experience the power of cutting-edge infrastructure tailored for gaming applications.</p>
+        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+          <div class="space-y-12 text-center">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Discord Bot Hosting</h3>
+              <p class="text-gray-600 dark:text-gray-300">We ALso Provide Free or Paid Discord Bot Hosting with 99.99% uptime , U can host ur bot in in nodejs or python languages .</p>
             </div>
-
-            <div class="feature">
-                <h3>2. User-Friendly Control Panel</h3>
-                <p>Our intuitive control panel makes server management a breeze. Easily configure settings, install mods, and monitor server performance with a user-friendly interface designed for both beginners and experienced users.</p>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+          <div class="space-y-12 text-center">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Vps Hosting</h3>
+              <p class="text-gray-600 dark:text-gray-300">We Also Provide Affordable Vps with the best quality hardware.</p>
             </div>
-
-            <div class="feature">
-                <h3>3. 24/7 Expert Support</h3>
-                <p>Need assistance at any time? Our dedicated support team is available around the clock to help you with any inquiries or technical issues. Your success is our priority.</p>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+          <div class="space-y-12 text-center">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">VDS</h3>
+              <p class="text-gray-600 dark:text-gray-300">We Also Provide Virtual Dedicated Server We do not provide refunds unless explicitly stated in our refund policy.</p>
             </div>
-
-            <div class="feature">
-                <h3>4. High Performance Servers</h3>
-                <p>Experience lag-free gaming with our high-performance servers. We invest in top-tier hardware and robust network infrastructure to deliver the best possible gaming experience for you and your community.</p>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+          <div class="space-y-12 text-center">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Web Hosting(Nginx)</h3>
+              <p class="text-gray-600 dark:text-gray-300">SOON.</p>
             </div>
-
-            <div class="feature">
-                <h3>5. Customization and Flexibility</h3>
-                <p>Every gaming community is unique. That's why we offer a range of customization options and flexible plans to meet the specific needs of your server. Scale resources as your community grows.</p>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+          <div class="space-y-12 text-center">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Game Server </h3>
+              <p class="text-gray-600 dark:text-gray-300">We Also Provide The Best Quality Game Server Hosting SOlutions IN cheap prices.</p>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 ByteBreeze Hosting. All rights reserved.</p>
-    </footer>
+  <section class="bg-white dark:bg-gray-900    ">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+        <form action="#" class="space-y-8">
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@bytebreeze.org" required>
+            </div>
+            <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+            </div>
+            <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+            </div>
+            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+        </form>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-</body>
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="https://bytebreeze.org/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="logo.png"  class="h-9" alt="Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ByteBreeze</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Pricing</a>
+                </li>
+                <li>
+                    <a href="pp.html" class="hover:underline me-4 md:me-6">Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" class="hover:underline">ByteBreeze™</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
+
+
+<script>(function(){var js = "window['__CF$cv$params']={r:'83c7edf4fe0b0d76',t:'MTcwMzc0Njg2MC4zOTAwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
 </html>
